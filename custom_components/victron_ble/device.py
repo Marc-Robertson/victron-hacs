@@ -439,7 +439,7 @@ class VictronBluetoothDeviceData(BluetoothData):
 #                native_unit_of_measurement=Units.ENERGY_WATT_HOUR,
 #                native_value=parsed.get_voltage() * parsed.get_consumed_ah() * -1,
 #                device_class=SensorDeviceClass.ENERGY,
-            )
+#            )
         elif isinstance(parsed, BatterySenseData):
             self.update_predefined_sensor(
                 SensorLibrary.TEMPERATURE__CELSIUS, parsed.get_temperature()
